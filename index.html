@@ -27,6 +27,7 @@
 
       gtag('config', 'UA-128470732-1');
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     
     <style type="text/css">
@@ -46,25 +47,42 @@
         color: purple;
         text-decoration: underline;
       }
-      .dinolinkimg {
-        width: auto;
-        height: 150px;
-        margin-top: -10px;
+      .box {
+        width: 244px;
+        height: 128px;
+        margin: 12px 12px 12px 400px;
+        background-color: #f9f9f9;
+        position: fixed;
       }
-      @media (min-width: 640px) {
-        .dinolinkimg {
-          position: absolute;
-          top: 20px;
-          left: 480px;
-          width: auto;
-          height: 130px;
-          margin: 0;
-        }
+      .box img {
+        object-fit: cover;
+        width: 244px;
+        height: 128px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
       }
     </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('#navigation li a').hover(
+          function(){
+              var linkIndex = $(this).attr("data-filename");
+              $(this).addClass('hover');
+              $('.box img').attr('src', linkIndex);
+          },
+          function(){
+              $(this).removeClass('hover');
+              $('.box img').attr('src', 'images/default.gif');
+          }
+      );
+      });
+    </script>
   </head>
 
   <body class="c19">
+    <div class="row">
     <p class="c13">
       <strong>Germano Dush&aacute; </strong><br>
       Writer ↭ curator ↭ critic ↭ cultural agent<br>
@@ -75,135 +93,140 @@
 
 
     <br>
-    <img class="dinolinkimg" src="images/default.gif">
+    <div class="box">
+      <img src="images/default.gif"/>       
+    </div>
+    </div>
     <br>
     
-   ↪ <i>ALL POINTS ARE LINKED</i> ↩
+    ↪ <i>ALL POINTS ARE LINKED</i> ↩ 
 
     <p><strong>Organizations:</strong></p>
-    <ul>
-      <a target="_blank" href="https://ofora.org"><li>2018/ongoing - <i>Fora</i>
-      <a target="_blank" href="http://umtrabalhoumtexto.tumblr.com"><li>2016/2021 - <i>um trabalho um texto</i>
-      <a target="_blank" href="http://banalbanal.org"><li>2016/2021 - <i>BANAL BANAL</i>
-      <a target="_blank" href="https://vimeo.com/observatorioarte"><li>2015/2016 - <i>Observat&oacute;rio</i>
-      <a target="_blank" href="https://vimeo.com/coletor"><li>2012/2016 - <i>Coletor</i></a> 
+    <ul id="navigation">
+      <li><a target="_blank" id="1" href="https://ofora.org" data-filename="images/germanodusha.png">2018/ongoing - <i>Fora</i></a></li>
+      <li><a target="_blank" id="2" href="http://umtrabalhoumtexto.tumblr.com" data-filename="images/germanodusha2.png">2016/2021 - <i>um trabalho um texto</i></a></li>
+      <li><a target="_blank" id="3" href="http://banalbanal.org" data-filename="images/germanodusha3.png">2016/2021 - <i>BANAL BANAL</i></a></li>
+      <li><a target="_blank" id="4" href="https://vimeo.com/observatorioarte" data-filename="images/germanodusha4.png">2015/2016 - <i>Observat&oacute;rio</i></a></li>
+      <li><a target="_blank" id="5" href="https://vimeo.com/coletor" data-filename="images/germanodusha5.png">2012/2016 - <i>Coletor</i></a></li>
     </ul>
 
     <p><strong>Exhibitions:</strong></p>
     <ul>
-      <a target="_blank" href="https://www.almeidaedale.com.br/en/exhibitions/26_terra_and_temperature.php"><li>2021 - <i>Terra and Temperature</i> - Almeida & Dale Galeria de Arte - São Paulo</a> </li>
-      <a target="_blank" href="https://galeriajaquelinemartins.com.br/en/exhibition/beginningofacentury"><li>2019 - <i>Beginning of a Century</i> - Galeria Jaqueline Martins - São Paulo</a> </li>
-      <a target="_blank" href="https://www.brunomurias.com/exhibitions/the-unstable-hour/"><li>2019 - <i>The Unstable Hour</i> - Galeria Bruno Múrias - Lisbon</a> </li>
-      <a target="_blank" href="http://change-change.hu/kendeutca%20germano.html"><li>2017 - <i>Where is your God now?!</i> - CHANGE-CHANGE - Budapest</a> </li>
-      <a target="_blank" href="https://periscopio.art.br/project/um-piano-na-selva/"><li>2017 - <i>A Piano in the Jungle</i> - Perisc&oacute;pio Arte Contempor&acirc;nea - Belo Horizonte</a> </li>
-      <a target="_blank" href="https://galeriajaquelinemartins.com.br/en/exhibition/deusestasolto"><li>2017 - <i>God is on the loose!&nbsp;</i>- Galeria Jaqueline Martins - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="https://monoskop.org/images/e/e2/Observat%C3%B3rio-_Vertigem%2C_gagueira%2C_repeti%C3%A7%C3%A3o_-_Registro_-_Documentation.pdf"><li>2016 - <i>Vertigo, stuttering, repetition&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="https://vimeo.com/181522225"><li>2016 - <i>\\\\ HAeammm //////// aOUuHhFFf&nbsp;</i>- &Aacute;tomos - Rio de Janeiro</a> </li>
-      <a target="_blank" href="https://monoskop.org/images/d/df/Athena_Esforco-Desempenho.pdf"><li>2016 - <i>Esforço-Desempenho</i> - Athena - Rio de Janeiro</a> </li>
-      <a target="_blank" href="https://vimeo.com/161295814"><li>2015 - <i>Hypothesis and Horizon&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="https://vimeo.com/144197347"><li>2015 - <i>Confrontation&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="https://vimeo.com/137695960"><li>2015 - <i>Maelstrom of History</i> - Observat&oacute;rio - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="http://coletor.org/en/acoes/estado-de-suspensao/"><li>2014 - <i>State of Suspension </i>- Coletor - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="http://coletor.org/en/acoes/abertura/"><li>2014 - <i>open-ing&nbsp;</i>- Coletor - S&atilde;o Paulo</a> </li>
+      <li><a target="_blank" id="6" href="https://www.almeidaedale.com.br/en/exhibitions/26_terra_and_temperature.php">2021 - <i>Terra and Temperature</i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
+      <li><a target="_blank" id="7" href="https://galeriajaquelinemartins.com.br/en/exhibition/beginningofacentury">2019 - <i>Beginning of a Century</i> - Galeria Jaqueline Martins - São Paulo</a></li>
+      <li><a target="_blank" id="8" href="https://www.brunomurias.com/exhibitions/the-unstable-hour/">2019 - <i>The Unstable Hour</i> - Galeria Bruno Múrias - Lisbon</a></li>
+      <li><a target="_blank" id="10" href="http://change-change.hu/kendeutca%20germano.html">2017 - <i>Where is your God now?!</i> - CHANGE-CHANGE - Budapest</a></li>
+      <li><a target="_blank" id="11" href="https://periscopio.art.br/project/um-piano-na-selva/">2017 - <i>A Piano in the Jungle</i> - Perisc&oacute;pio Arte Contempor&acirc;nea - Belo Horizonte</a></li>
+      <li><a target="_blank" id="12" href="https://galeriajaquelinemartins.com.br/en/exhibition/deusestasolto">2017 - <i>God is on the loose!&nbsp;</i>- Galeria Jaqueline Martins - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="13" href="https://monoskop.org/images/e/e2/Observat%C3%B3rio-_Vertigem%2C_gagueira%2C_repeti%C3%A7%C3%A3o_-_Registro_-_Documentation.pdf">2016 - <i>Vertigo, stuttering, repetition&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="14" href="https://vimeo.com/181522225">2016 - <i>\\\\ HAeammm //////// aOUuHhFFf&nbsp;</i>- &Aacute;tomos - Rio de Janeiro</a></li>
+      <li><a target="_blank" id="15" href="https://monoskop.org/images/d/df/Athena_Esforco-Desempenho.pdf">2016 - <i>Esforço-Desempenho</i> - Athena - Rio de Janeiro</a></li>
+      <li><a target="_blank" id="16" href="https://vimeo.com/161295814">2015 - <i>Hypothesis and Horizon&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="17" href="https://vimeo.com/144197347">2015 - <i>Confrontation&nbsp;</i>- Observat&oacute;rio - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="18" href="https://vimeo.com/137695960">2015 - <i>Maelstrom of History</i> - Observat&oacute;rio - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="19" href="http://coletor.org/en/acoes/estado-de-suspensao/">2014 - <i>State of Suspension </i>- Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" id="20" href="http://coletor.org/en/acoes/abertura/">2014 - <i>open-ing&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
     </ul>
 
-  <p><strong>Books:</strong></p>
+    <p><strong>Books:</strong></p>
     <ul>
-      <a target="_blank" href="https://www.almeidaedale.com.br/assets/pdfs/publicacoes/Terra_e_Temperatura.pdf"><li>2021 - <i>Terra and Temperature</i> - Almeida & Dale - São Paulo </a></li>
-      <a target="_blank" href="https://nolibros.org/hora-instavel"><li>2019 - <i>The Unstable Hour</i> - NO-LIBROS - Barcelona </a></li>
-      <a target="_blank" href="http://livros-fantasma.com/contrafeitico/"><li>2019 - <i>Contra Feitiço</i> - Livros Fantasma - São Paulo </a></li>
-      <a target="_blank" href="https://monoskop.org/images/b/b4/Zine_-_Joanna_Piotrowska_Germano_Dushá.pdf"><li>2017 - <i>Essay by Germano Dushá Images by Joanna Piotrowska</i> - InclusArtiz Institute - Rio de Janeiro </a></li>
+      <li><a target="_blank" href="https://www.almeidaedale.com.br/assets/pdfs/publicacoes/Terra_e_Temperatura.pdf" data-filename="images/t&tbook.png">2021 - <i>Terra and Temperature</i> - Almeida & Dale - São Paulo </a></li>
+      <li><a target="_blank" href="https://nolibros.org/hora-instavel" data-filename="images/ahorainstavelbook.png">2019 - <i>The Unstable Hour</i> - NO-LIBROS - Barcelona </a></li>
+      <li><a target="_blank" href="http://livros-fantasma.com/contrafeitico/" data-filename="images/contrafeitico.png">2019 - <i>Contra Feitiço</i> - Livros Fantasma - São Paulo </a></li>
+      <li><a target="_blank" href="https://monoskop.org/images/b/b4/Zine_-_Joanna_Piotrowska_Germano_Dushá.pdf" data-filename="images/essaybyimagesby.png">2017 - <i>Essay by Germano Dushá Images by Joanna Piotrowska</i> - InclusArtiz Institute - Rio de Janeiro </a></li>
     </ul>
   
-   <p><strong>Digital:</strong></p>
+    <p><strong>Digital:</strong></p>
     <ul>
-      <a target="_blank" href="http://genesys2021.sescsp.org.br"><li>2021 - <i>Genesys→2021</i> - Sesc São Paulo - São Paulo</a></li>
-      <a target="_blank" href="https://monoskop.org/images/a/a2/Animal_Crepuscular.pdf"><li>2020 - <i>Crepuscular Animal (Thiago Martins de Melo)</i> - Galeria Millan - São Paulo</a></li>
-      <a target="_blank" href="https://comecodeseculo.com"><li>2019 - <i>Beginning of a Century</i> - Galeria Jaqueline Martins - São Paulo </a></li>
+      <li><a target="_blank" href="http://genesys2021.sescsp.org.br" data-filename="images/genesys2021.png">2021 - <i>Genesys→2021</i> - Sesc São Paulo - São Paulo</a></li>
+      <li><a target="_blank" href="https://monoskop.org/images/a/a2/Animal_Crepuscular.pdf" data-filename="images/animalcrepuscular.png">2020 - <i>Crepuscular Animal (Thiago Martins de Melo)</i> - Galeria Millan - São Paulo</a></li>
+      <li><a target="_blank" href="https://comecodeseculo.com" data-filename="images/cdswebsite.png">2019 - <i>Beginning of a Century</i> - Galeria Jaqueline Martins - São Paulo </a></li>
     </ul>
-</i> 
+    </i> 
 
     <p><strong>Audiovisual:</strong></p>
     <ul>
-      <a target="_blank" href="https://vimeo.com/400306725"><li>2020 - <i>NU GLOBAL INC</i></a></li>
-      <a target="_blank" href="https://vimeo.com/227650350"><li>2017 - <i>Vertigo, stuttering, repetition</i></a></li>
-      <a target="_blank" href="https://vimeo.com/202443499"><li>2017 - <i>God is on the loose!</i></a></li>
+      <li><a target="_blank" href="https://vimeo.com/400306725" data-filename="images/nuglobalinc.png">2020 - <i>NU GLOBAL INC</i></a></li>
+      <li><a target="_blank" href="https://vimeo.com/227650350" data-filename="images/vgrvideo.png">2017 - <i>Vertigo, stuttering, repetition</i></a></li>
+      <li><a target="_blank" href="https://vimeo.com/202443499" data-filename="images/deusestasoltovideo.png">2017 - <i>God is on the loose!</i></a></li>
     </ul>
 
-<p><strong>Essays:</strong></p>
+    <p><strong>Essays:</strong></p>
     <ul>
-      <a target="_blank" href="https://monoskop.org/images/6/6f/20_em_20_-_Adriano_Amaral_by_Germano_Dushá.pdf"><li>2020 - Adriano Amaral (in 20 em 20 - Artistas da próxima década América Latina) <i> </i> - ACT - São Paulo</a> </li>
-      <a target="_blank" href="https://www.artbasel.com/stories/ovr-miami-beach-latin-american-highlights"><li>2020 - <i>Nature, visions, and reimagining the gaze in 2020 </i> - Art Basel - Basel/Miami</a> </li>
-      <a target="_blank" href="https://files.cargocollective.com/c687140/ed1-digital-final5-min.pdf"><li>2020 - <i>Solavanco às três da manhã</i> - O Turvo - São Paulo </a></li>
-      <a target="_blank" href="https://gamarevista.com.br/pessoas/um-amigo-mais-proximo-que-um-irmao/"><li>2020 - <i>Um amigo mais próximo que um irmão</i> - Gama - São Paulo </a></li>
-      <a target="_blank" href="https://www.artbasel.com/stories/jonathas-de-andrade-profile-ecological-collapse"><li>2019 - <i>Jonathas de Andrade's Profile</i> - Art Basel - Basel/Miami</a> </li>
-      <a target="_blank" href="https://editoracapivara.com.br/produto/thiago-martins-de-melo/"><li>2019 - <i>The Suindara, the centuries, and other stories</i> (in Thiago Martins de Melo) - Capivara - Rio de Janeiro</a> </li>
-      <a target="_blank" href="https://ofora.org/acoes/uma-cidade-agora"><li>2018 - <i>Uma cidade agora</i> - Fora - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="http://terremoto.mx/33a-bienal-de-sao-paulo-brasil/"><li>2018 - <i>33ª Bienal de São Paulo </i> - Terremoto - Mexico City</a> </li>
-      <a target="_blank" href="https://monoskop.org/images/b/b6/Dusha_Germano_2018_Tudo_se_agita_Anuario_Todavia.pdf"><li>2018 - <i>Tudo se agita </i> (in Anuário Todavia) - todavia - São Paulo</a> </li>
-      <a target="_blank" href="https://www.moussepublishing.com/?product=pjota"><li>2018 - <i>A meeting of multitudes</i> (in Paulo Nimer Pjota) - Mousse Publishing - Milan</a> </li>
-      <a target="_blank" href="http://www.flashartonline.com/article/mamba-negra/"><li>2016 - <i>Mamba Negra</i> (in Flash Art International 311) - Flash Art - Milan</a> </li>
-      <a target="_blank" href="https://monoskop.org/images/b/bb/K26_HIGHLIGHTS_SCREEN_%28dragged%29_29.pdf"><li>2016 - <i>Highlights Paulo Nimer Pjota&nbsp;</i>(in Kaleidoscope 26) - Kaleidoscope - Milan</a></li>
-      <a target="_blank" href="https://monoskop.org/images/2/21/POR_MatheusRochaPitta_34.pdf"><li>2016 - <i>Da precariedade à potência: Matheus Rocha Pitta&nbsp;</i>(in ARTE!Brasileiros n. 34) - Brasileiros - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="https://monoskop.org/images/2/2f/Dusha_Germano_2015_Do_Ato_ao_Depositario_Matheus_Rocha_Pitta.pdf"><li>2015 - <i>Do ato ao depositário: Matheus Rocha Pitta&nbsp;</i>(in Harper's Bazaar Art 2015-1) - Harper's Bazaar - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="https://monoskop.org/images/6/6f/20_em_20_-_Adriano_Amaral_by_Germano_Dushá.pdf">2020 - Adriano Amaral (in 20 em 20 - Artistas da próxima década América Latina) <i> </i> - ACT - São Paulo</a> </li>
+      <li><a target="_blank" href="https://www.artbasel.com/stories/ovr-miami-beach-latin-american-highlights">2020 - <i>Nature, visions, and reimagining the gaze in 2020 </i> - Art Basel - Basel/Miami</a> </li>
+      <li><a target="_blank" href="https://files.cargocollective.com/c687140/ed1-digital-final5-min.pdf">2020 - <i>Solavanco às três da manhã</i> - O Turvo - São Paulo </a></li>
+      <li><a target="_blank" href="https://gamarevista.com.br/pessoas/um-amigo-mais-proximo-que-um-irmao/">2020 - <i>Um amigo mais próximo que um irmão</i> - Gama - São Paulo </a></li>
+      <li><a target="_blank" href="https://www.artbasel.com/stories/jonathas-de-andrade-profile-ecological-collapse">2019 - <i>Jonathas de Andrade's Profile</i> - Art Basel - Basel/Miami</a> </li>
+      <li><a target="_blank" href="https://editoracapivara.com.br/produto/thiago-martins-de-melo/">2019 - <i>The Suindara, the centuries, and other stories</i> (in Thiago Martins de Melo) - Capivara - Rio de Janeiro</a> </li>
+      <li><a target="_blank" href="https://ofora.org/acoes/uma-cidade-agora">2018 - <i>Uma cidade agora</i> - Fora - S&atilde;o Paulo</a> </li>
+      <li><a target="_blank" href="http://terremoto.mx/33a-bienal-de-sao-paulo-brasil/">2018 - <i>33ª Bienal de São Paulo </i> - Terremoto - Mexico City</a> </li>
+      <li><a target="_blank" href="https://monoskop.org/images/b/b6/Dusha_Germano_2018_Tudo_se_agita_Anuario_Todavia.pdf">2018 - <i>Tudo se agita </i> (in Anuário Todavia) - todavia - São Paulo</a> </li>
+      <li><a target="_blank" href="https://www.moussepublishing.com/?product=pjota">2018 - <i>A meeting of multitudes</i> (in Paulo Nimer Pjota) - Mousse Publishing - Milan</a> </li>
+      <li><a target="_blank" href="http://www.flashartonline.com/article/mamba-negra/">2016 - <i>Mamba Negra</i> (in Flash Art International 311) - Flash Art - Milan</a> </li>
+      <li><a target="_blank" href="https://monoskop.org/images/b/bb/K26_HIGHLIGHTS_SCREEN_%28dragged%29_29.pdf">2016 - <i>Highlights Paulo Nimer Pjota&nbsp;</i>(in Kaleidoscope 26) - Kaleidoscope - Milan</a></li>
+      <li><a target="_blank" href="https://monoskop.org/images/2/21/POR_MatheusRochaPitta_34.pdf">2016 - <i>Da precariedade à potência: Matheus Rocha Pitta&nbsp;</i>(in ARTE!Brasileiros n. 34) - Brasileiros - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="https://monoskop.org/images/2/2f/Dusha_Germano_2015_Do_Ato_ao_Depositario_Matheus_Rocha_Pitta.pdf">2015 - <i>Do ato ao depositário: Matheus Rocha Pitta&nbsp;</i>(in Harper's Bazaar Art 2015-1) - Harper's Bazaar - S&atilde;o Paulo</a></li>
     </ul>
 
     <p><strong>Collaborations:</strong></p>
     <ul>
-      <a target="_blank" href="https://youtu.be/qtUpjR5w2dM"><li>2021 - Video for <i> Nina Botkay's video-performance Untitled </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
-      <a target="_blank" href="https://youtu.be/BOimW8xphzE"><li>2021 - Interlocution and video for <i> A conversation with Paulo Pires </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
-      <a target="_blank" href="https://youtu.be/QNIBvdZulDo"><li>2021 - Interlocution and video for <i> A conversation with Davi de Jesus do Nascimento </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
-      <a target="_blank" href="http://roam.novasfrequencias.com"><li>2021 - Coordination for <i> Novas Frequências' digital project Roam @ IN/OUT Festival </i> - Pro Helvetia - Online</a></li>
-      <a target="_blank" href="https://www.fromtheforestsashes.com"><li>2021 - Coordination for the digital platform of <i>fooculture days Edition 2020/2021 – From the forests'ashes</i> - foodculture days - Vevey / Online</a></li>
-      <a target="_blank" href="https://whenthematterisgone.fromtheforestsashes.com"><li>2021 - Coordination for <i> Iagor Pere's digital project When the matter is gone </i> - foodculture days - Online</a></li>
-      <a target="_blank" href="https://headwaters.fromtheforestsashes.com"><li>2021 - Coordination for <i> The Soft Protest Digest's digital project Headwaters </i> - foodculture days - Online</a></li>
-      <a target="_blank" href="http://hermapartprojects.org/"><li>2021 - Coordination for multimedia exhibition and digital platform <i>HerMaP Iran – Cultural Heritage Management Project</i> - BOZAR / Goethe-Institut  - Brussels / Online</a></li>
-      <a target="_blank" href="https://banalbanal.org/bb0011.html"><li>2021 - Coordination for <i>Wisrah Villefort's work EEE</i> - BANAL BANAL - Online</a></li>
-      <a target="_blank" href="https://banalbanal.org/bb0010.html"><li>2020 - Coordination and text for <i>Vitória Cribb's work Static Frenzy (corrupted_0000)</i> - BANAL BANAL - Online</a></li>
-      <a target="_blank" href="https://banalbanal.org/bb0009.html"><li>2020 - Coordination and text for <i>Raul Luna's work Future Television</i> - BANAL BANAL - Online</a></li>
-      <a target="_blank" href="https://www.youtube.com/watch?v=qZZAsD5I_ak&t=1s"><li>2020 - Text for <i>Naves Cilíndricas' video Monólito </i> - Domina Label - Rio de Janeiro / São Paulo</a></li>
-      <a target="_blank" href="https://dominalabel.bandcamp.com/album/amaz-nia-mega-drive-dom013"><li>2020 - Co-conception and text for <i>ótimokaráter's music album Amazônia Mega Drive</i> - Domina Label - Rio de Janeiro / São Paulo</a></li>
-      <a target="_blank" href="https://subsubtropics.bandcamp.com/album/tierra-memoria-arco-de-fuego"><li>2020 - Text for <i>TIERRA MEMORIA's album ARCO DE FUEGO </i> - Subsubtropics Records - São Paulo</a></li>
-      <a target="_blank" href="http://www.mg-lj.si/en/online-exhibitions/2888/viral-portraits/#page/67"><li>2020 - Digital photograph <i>Untitled (Still Nature)</i> for online exhibition Viral Self-Portraits - Moderna galerija - Ljubljana</a></li>
-      <a target="_blank" href="https://ofora.org/acoes/entre-fora"><li>2020 - Coordination for <i>Marcelo Mudou's work Arquivo Complementar </i> - Fora - São Paulo</a></li>
-      <a target="_blank" href="https://cargocollective.com/felipebarsuglia/milanesa"><li>2020 - Text for <i>Felipe Barsuglia&#39;s exhibition Milanesa </i> - Anita Schwartz - Rio de Janeiro</a></li>
-      <a target="_blank" href="https://youtu.be/NXufPDiTKNc"><li>2019 - Co-conception and coordination for <i>Nina Botkay&#39;s video-performance Delir</i> - Começo de Século - São Paulo</a></li>
-      <a target="_blank" href="https://youtu.be/7y3zOCXFGtE"><li>2019 - Co-conception and coordination for <i>Lucas Brandão&#39;s video-performance BUG</i> - Começo de Século - São Paulo</a></li>
-      <a target="_blank" href="https://periscopio.art.br/exposicao/como-ativar-os-estilhacos-da-historia-pela-linguagem-re-alfabetizacao-politica-urgente/"><li>2019 - Curatorship for <i>Traplev&#39;s exhibition Como ativar os estilhaços da história pela linguagem: re-alfabetização política urgente </i> - Periscópio - Belo Horizonte</a></li>
-      <a target="_blank" href="http://galeriacavalo.com/exposicao/rasga-mortalha/"><li>2019 - Curatorship for <i>Thiago Martins de Melo&#39;s exhibition Rasga Mortalha </i> - Galeria Cavalo - Rio de Janeiro</a></li>
-      <a target="_blank" href="https://periscopio.art.br/project/republica-da-cobra/"><li>2018 - Curatorship for <i>Randolpho Lamonier and Thiago Martins de Melo&#39;s exhibition República da Cobra </i> - Periscópio - Belo Horizonte</a></li>
-      <a target="_blank" href="https://ofora.org/acoes/entre-fora"><li>2019 - Coordination and video for <i>Maria Noujaim's work Entre-fora </i> - Fora - São Paulo</a></li>
-      <a target="_blank" href="http://banalbanal.org/bb0007.html"><li>2018 - Coordination and text <i>Ricardo Carioba&#39;s work Organic Decline </i> - BANAL BANAL - Online</li>
-      <a target="_blank" href="https://monoskop.org/images/6/63/FLYER_RicardoCarioba_Galerie_Wedding.pdf"><li>2018 - Text for <i>Ricardo Carioba&#39;s exhibition Organic Decline </i> - singuhr – projekte / Galerie Wedding - Berlin</a></li>
-      <a target="_blank" href="https://www.centralgaleria.com/eiraalheia"><li>2018 - Text for <i>C.L. Salvaro&#39;s exhibition Eira Alheia </i> - Central Galeria - São Paulo</a></li>
-      <a target="_blank" href="https://www.stroom.nl/paginas/pagina.php?pa_id=6573872"><li>2018 - Participating curator in the Stroom Invest Week 2018 </i> - Stroom Den Haag - The Hague</a></li>
-      <a target="_blank" href="https://ofora.org/acoes/unhas-rasgarao-cidades"><li>2018 - Coordination for <i>Ana Matheus Abbade's work Unhas rasgarão cidades </i> - Fora - São Paulo</a></li>
-      <a target="_blank" href="https://ofora.org/acoes/passo-espaco-passo"><li>2018 - Co-conception and coordination for <i>Nina Botkay's Passo / Espaço / Passo </i> - Fora - São Paulo</a></li>
-      <a target="_blank" href="http://www.galeriapilar.com/exposicoes/acumulo/"><li>2018 - Visual dialogue and text for <i>Bruno Baptistelli&#39;s exhibition Acúmulo </i> - Galeria Pilar - São Paulo</a></li>
-      <a target="_blank" href="http://galeriajaquelinemartins.com.br/exposicao/recomecos"><li>2018 - Curatorship for <i>Maria Noujaim&#39;s exhibition Recomeços: quatro inícios </i> - Galeria Jaqueline Martins - São Paulo</a></li>
-      <a target="_blank" href="https://www.pivo.org.br/en/blog/entrevista-germano-dusha-pontogor/"><li>2017 - Video essay / interview with Pontogor <i> A & A | A ou A </i> - Pivô - São Paulo</a></li>
-      <a target="_blank" href="http://mendeswooddm.com/en/exhibition/hall"><li>2017 - Text for <i>Luiz Roque&#39;s exhibition Hall </i> - Mendes Wood DM - São Paulo</a></li>
-      <a target="_blank" href="https://traplev.hotglue.me/?expobrasilia"><li>2017 - Curatorship for <i>Traplev&#39;s exhibition Systems of structures and elements of scam, room 7 </i> - Complexo Funarte - Brasília </a></li>
-      <a target="_blank" href="http://mendeswooddm.com/en/exhibition/the-history-in-repeat-mode--image"><li>2017 - Text for <i>Paulo Nimer Pjota&#39;s exhibition The history in repeat mode — image </i> - Mendes Wood DM - Brussels</a></li>
-      <a target="_blank" href="http://umtrabalhoumtexto.tumblr.com/post/161095743507/marianoujaimgermanodusha"><li>2017 - Text for <i>Maria Noujaim&#39;s exhibition Giro (Twist) </i> - um trabalho um texto - São Paulo</a></li>
-      <a target="_blank" href="http://cargocollective.com/floraleite/Boca-do-Ceu"><li>2017 - Curatorship for <i>Flora Leite&#39;s exhibition Heaven&#39;s Mouth</i> - Oficina Cultural Oswald de Andrade - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="http://cargocollective.com/floraleite/Boca-do-Ceu"><li>2017 - Coordination for <i>Gabriel Junqueira&#39;s work Sem título</i> - BANAL BANAL - Online</a></li>
-      <a target="_blank" href="http://banalbanal.org/bb0003.html"><li>2016 - Coordination and text for <i>Felipe Barsuglia&#39;s work site-terapia&nbsp;</i>- BANAL BANAL - Online
-      <a target="_blank" href="http://banalbanal.org/bb0001.html"><li>2016 - Coordination and text for <i>Helô Duran & Ceticências&#39; work Virtual Sunset&nbsp;</i>- BANAL BANAL - Online
-      <a target="_blank" href="https://gustavoferro.org/ground-control"><li>2016 - Curatorship for <i>Gustavo Ferro&#39;s exhibition Ground Control&nbsp;</i>- S&eacute; - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="http://mendeswooddm.com/en/exhibition/synthesis-between-contradictory-ideas-and-the-plurality-of-the-object-as-image-i"><li>2016 - Text for <i>Paulo Nimer Pjota&#39;s exhibition Synthesis between contradictory ideas and the plurality of the object as image&nbsp;</i>- Mendes Wood DM - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="https://periscopio.art.br/project/domingo/"><li>2015 - Text for <i>F&aacute;bio Tremonte&#39;s exhibition Sunday</i> - Perisc&oacute;pio - Belo Horizonte</a></li>
-      <a target="_blank" href="https://www.renatadebonis.com/preencher-o-interlúdio-sem-quebrá-l"><li>2015 - Text for <i>Renata De Bonis&#39; exhibition&nbsp;,to fill the interlude without breaking it,&nbsp;</i>- BFA Boatos Fine Art - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="https://pt.jaimelauriano.com/texto_germano"><li>2015 - Text for <i>Jaime Lauriano&#39;s exhibition&nbsp;Nessa terra, em se plantando, tudo d&aacute;</i> - Centro Cultural Banco do Brasil - Rio de Janeiro</a></li>
-      <a target="_blank" href="http://warmsaopaulo.com/leonardo-stroka-derrota-dissipacao-e-esbanjamento/"><li>2015 - Curatorship for <i>Leonardo Stroka&#39;s exhibition Defeat, dissipation and squandering </i> - Warm - S&atilde;o Paulo</a> </li>
-      <a target="_blank" href="http://janainawagner.com/DECUPAGEM"><li>2015 - Accompaniment and text for <i>Janaina Wagner&#39;s exhibition Decupagem/Cr&ocirc;nica de um final anunciado&nbsp;</i>- Museu de Arte de Ribeir&atilde;o Preto (MARP) - Ribeir&atilde;o Preto</a> </li>
-      <a target="_blank" href="http://coletor.org/acoes/matheus-rocha-pitta-fonte-para-o-manifestante-desconhecido/"><li>2015 - Coordination and text for <i>Matheus Rocha Pitta&#39;s work Fountain for the Unknown Protester</i> - Coletor - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="http://plataforma.videobrasil.org.br/en/#mapeamentos/82"><li>2015 - Publishing <i>The City as Medium</i> - PLATAFORMA:VB (Videobrasil) - Online </a></li>
-      <a target="_blank" href="http://coletor.org/en/acoes/anton-steenbock-pop-tower/"><li>2014 - Coordination and text for <i>Anton Steenbock&#39;s exhibition Pop Tower&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="http://coletor.org/en/acoes/portugues-lais-myrrha-ensaio-de-orquestra/"><li>2014 - Coordination and text for <i>Lais Myrrha&#39;s exhibition Orchestra Rehearsal&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="http://coletor.org/en/acoes/renata-de-bonis-suite/"><li>2014 - Coordination and text for <i>Renata De Bonis&#39; exhibition Suite&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
-       <a target="_blank" href="http://coletor.org/en/acoes/ricardo-carioba-sem-titulo/"><li>2014 - Coordination and text for <i>Ricardo Carioba&#39; exhibition untitled&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
-      <a target="_blank" href="http://8salon.net/32th-coopy-righots-we-made-it-readi-in-brazil"><li>2014 - Coordination and artists selection for the exhibition <i>32th Coopy RIghOTs - we MADE it READI, in Brazil&nbsp;</i>- 8Salon - Hamburg</a> </li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=QNIBvdZulDo">2021 - Video for <i> Nina Botkay's video-performance Untitled </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=QNIBvdZulDo">2021 - Interlocution and video for <i> A conversation with Paulo Pires </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=QNIBvdZulDo">2021 - Interlocution and video for <i> A conversation with Paulo Pires </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=QNIBvdZulDo">2021 - Interlocution and video for <i> A conversation with Davi de Jesus do Nascimento </i> - Almeida & Dale Galeria de Arte - São Paulo</a></li>
+      <li><a target="_blank" href="http://roam.novasfrequencias.com">2021 - Coordination for <i> Novas Frequências' digital project Roam @ IN/OUT Festival </i> - Pro Helvetia - Online</a></li>
+      <li><a target="_blank" href="https://www.fromtheforestsashes.com">2021 - Coordination for the digital platform of <i>fooculture days Edition 2020/2021 – From the forests'ashes</i> - foodculture days - Vevey / Online</a></li>
+      <li><a target="_blank" href="https://whenthematterisgone.fromtheforestsashes.com">2021 - Coordination for <i> Iagor Pere's digital project When the matter is gone </i> - foodculture days - Online</a></li>
+      <li><a target="_blank" href="https://headwaters.fromtheforestsashes.com">2021 - Coordination for <i> The Soft Protest Digest's digital project Headwaters </i> - foodculture days - Online</a></li>
+      <li><a target="_blank" href="http://hermapartprojects.org/">2021 - Coordination for multimedia exhibition and digital platform <i>HerMaP Iran – Cultural Heritage Management Project</i> - BOZAR / Goethe-Institut  - Brussels / Online</a></li>
+      <li><a target="_blank" href="https://banalbanal.org/bb0011.html">2021 - Coordination for <i>Wisrah Villefort's work EEE</i> - BANAL BANAL - Online</a></li>
+      <li><a target="_blank" href="https://banalbanal.org/bb0010.html">2020 - Coordination and text for <i>Vitória Cribb's work Static Frenzy (corrupted_0000)</i> - BANAL BANAL - Online</a></li>
+      <li><a target="_blank" href="https://banalbanal.org/bb0009.html">2020 - Coordination and text for <i>Raul Luna's work Future Television</i> - BANAL BANAL - Online</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=qZZAsD5I_ak&t=1s">2020 - Text for <i>Naves Cilíndricas' video Monólito </i> - Domina Label - Rio de Janeiro / São Paulo</a></li>
+      <li><a target="_blank" href="https://dominalabel.bandcamp.com/album/amaz-nia-mega-drive-dom013">2020 - Co-conception and text for <i>ótimokaráter's music album Amazônia Mega Drive</i> - Domina Label - Rio de Janeiro / São Paulo</a></li>
+      <li><a target="_blank" href="https://subsubtropics.bandcamp.com/album/tierra-memoria-arco-de-fuego">2020 - Text for <i>TIERRA MEMORIA's album ARCO DE FUEGO </i> - Subsubtropics Records - São Paulo</a></li>
+      <li><a target="_blank" href="http://www.mg-lj.si/en/online-exhibitions/2888/viral-portraits/#page/67">2020 - Digital photograph <i>Untitled (Still Nature)</i> for online exhibition Viral Self-Portraits - Moderna galerija - Ljubljana</a></li>
+      <li><a target="_blank" href="https://ofora.org/acoes/entre-fora">2020 - Coordination for <i>Marcelo Mudou's work Arquivo Complementar </i> - Fora - São Paulo</a></li>
+      <li><a target="_blank" href="https://cargocollective.com/felipebarsuglia/milanesa">2020 - Text for <i>Felipe Barsuglia&#39;s exhibition Milanesa </i> - Anita Schwartz - Rio de Janeiro</a></li>
+      <li><a target="_blank" href="https://youtu.be/NXufPDiTKNc">2019 - Co-conception and coordination for <i>Nina Botkay&#39;s video-performance Delir</i> - Começo de Século - São Paulo</a></li>
+      <li><a target="_blank" href="https://youtu.be/7y3zOCXFGtE">2019 - Co-conception and coordination for <i>Lucas Brandão&#39;s video-performance BUG</i> - Começo de Século - São Paulo</a></li>
+      <li><a target="_blank" href="https://periscopio.art.br/exposicao/como-ativar-os-estilhacos-da-historia-pela-linguagem-re-alfabetizacao-politica-urgente/">2019 - Curatorship for <i>Traplev&#39;s exhibition Como ativar os estilhaços da história pela linguagem: re-alfabetização política urgente </i> - Periscópio - Belo Horizonte</a></li>
+      <li><a target="_blank" href="http://galeriacavalo.com/exposicao/rasga-mortalha/">2019 - Curatorship for <i>Thiago Martins de Melo&#39;s exhibition Rasga Mortalha </i> - Galeria Cavalo - Rio de Janeiro</a></li>
+      <li><a target="_blank" href="https://periscopio.art.br/project/republica-da-cobra/">2018 - Curatorship for <i>Randolpho Lamonier and Thiago Martins de Melo&#39;s exhibition República da Cobra </i> - Periscópio - Belo Horizonte</a></li>
+      <li><a target="_blank" href="https://ofora.org/acoes/entre-fora">2019 - Coordination and video for <i>Maria Noujaim's work Entre-fora </i> - Fora - São Paulo</a></li>
+      <li><a target="_blank" href="http://banalbanal.org/bb0007.html">2018 - Coordination and text <i>Ricardo Carioba&#39;s work Organic Decline </i> - BANAL BANAL - Online</li>
+      <li><a target="_blank" href="https://monoskop.org/images/6/63/FLYER_RicardoCarioba_Galerie_Wedding.pdf">2018 - Text for <i>Ricardo Carioba&#39;s exhibition Organic Decline </i> - singuhr – projekte / Galerie Wedding - Berlin</a></li>
+      <li><a target="_blank" href="https://www.centralgaleria.com/eiraalheia">2018 - Text for <i>C.L. Salvaro&#39;s exhibition Eira Alheia </i> - Central Galeria - São Paulo</a></li>
+      <li><a target="_blank" href="https://www.stroom.nl/paginas/pagina.php?pa_id=6573872">2018 - Participating curator in the Stroom Invest Week 2018 </i> - Stroom Den Haag - The Hague</a></li>
+      <li><a target="_blank" href="https://ofora.org/acoes/unhas-rasgarao-cidades">2018 - Coordination for <i>Ana Matheus Abbade's work Unhas rasgarão cidades </i> - Fora - São Paulo</a></li>
+      <li><a target="_blank" href="https://ofora.org/acoes/passo-espaco-passo">2018 - Co-conception and coordination for <i>Nina Botkay's Passo / Espaço / Passo </i> - Fora - São Paulo</a></li>
+      <li><a target="_blank" href="http://www.galeriapilar.com/exposicoes/acumulo/">2018 - Visual dialogue and text for <i>Bruno Baptistelli&#39;s exhibition Acúmulo </i> - Galeria Pilar - São Paulo</a></li>
+      <li><a target="_blank" href="http://galeriajaquelinemartins.com.br/exposicao/recomecos">2018 - Curatorship for <i>Maria Noujaim&#39;s exhibition Recomeços: quatro inícios </i> - Galeria Jaqueline Martins - São Paulo</a></li>
+      <li><a target="_blank" href="https://www.pivo.org.br/en/blog/entrevista-germano-dusha-pontogor/">2017 - Video essay / interview with Pontogor <i> A & A | A ou A </i> - Pivô - São Paulo</a></li>
+      <li><a target="_blank" href="http://mendeswooddm.com/en/exhibition/hall">2017 - Text for <i>Luiz Roque&#39;s exhibition Hall </i> - Mendes Wood DM - São Paulo</a></li>
+      <li><a target="_blank" href="https://traplev.hotglue.me/?expobrasilia">2017 - Curatorship for <i>Traplev&#39;s exhibition Systems of structures and elements of scam, room 7 </i> - Complexo Funarte - Brasília </a></li>
+      <li><a target="_blank" href="http://mendeswooddm.com/en/exhibition/the-history-in-repeat-mode--image">2017 - Text for <i>Paulo Nimer Pjota&#39;s exhibition The history in repeat mode — image </i> - Mendes Wood DM - Brussels</a></li>
+      <li><a target="_blank" href="http://umtrabalhoumtexto.tumblr.com/post/161095743507/marianoujaimgermanodusha">2017 - Text for <i>Maria Noujaim&#39;s exhibition Giro (Twist) </i> - um trabalho um texto - São Paulo</a></li>
+      <li><a target="_blank" href="http://cargocollective.com/floraleite/Boca-do-Ceu">2017 - Curatorship for <i>Flora Leite&#39;s exhibition Heaven&#39;s Mouth</i> - Oficina Cultural Oswald de Andrade - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://cargocollective.com/floraleite/Boca-do-Ceu">2017 - Coordination for <i>Gabriel Junqueira&#39;s work Sem título</i> - BANAL BANAL - Online</a></li>
+      <li><a target="_blank" href="http://banalbanal.org/bb0003.html">2016 - Coordination and text for <i>Felipe Barsuglia&#39;s work site-terapia&nbsp;</i>- BANAL BANAL - Online
+      <li><a target="_blank" href="http://banalbanal.org/bb0001.html">2016 - Coordination and text for <i>Helô Duran & Ceticências&#39; work Virtual Sunset&nbsp;</i>- BANAL BANAL - Online
+      <li><a target="_blank" href="https://gustavoferro.org/ground-control">2016 - Curatorship for <i>Gustavo Ferro&#39;s exhibition Ground Control&nbsp;</i>- S&eacute; - S&atilde;o Paulo</a> </li>
+      <li><a target="_blank" href="http://mendeswooddm.com/en/exhibition/synthesis-between-contradictory-ideas-and-the-plurality-of-the-object-as-image-i">2016 - Text for <i>Paulo Nimer Pjota&#39;s exhibition Synthesis between contradictory ideas and the plurality of the object as image&nbsp;</i>- Mendes Wood DM - S&atilde;o Paulo</a> </li>
+      <li><a target="_blank" href="https://periscopio.art.br/project/domingo/">2015 - Text for <i>F&aacute;bio Tremonte&#39;s exhibition Sunday</i> - Perisc&oacute;pio - Belo Horizonte</a></li>
+      <li><a target="_blank" href="http://renatadebonis.com/node/128">2015 - Text for <i>Renata De Bonis&#39; exhibition&nbsp;,to fill the interlude without breaking it,&nbsp;</i>- BFA Boatos Fine Art - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="https://pt.jaimelauriano.com/texto_germano">2015 - Text for <i>Jaime Lauriano&#39;s exhibition&nbsp;Nessa terra, em se plantando, tudo d&aacute;</i> - Centro Cultural Banco do Brasil - Rio de Janeiro</a></li>
+      <li><a target="_blank" href="http://warmsaopaulo.com/leonardo-stroka-derrota-dissipacao-e-esbanjamento/">2015 - Curatorship for <i>Leonardo Stroka&#39;s exhibition Defeat, dissipation and squandering </i> - Warm - S&atilde;o Paulo</a> </li>
+      <li><a target="_blank" href="http://janainawagner.com/DECUPAGEM">2015 - Accompaniment and text for <i>Janaina Wagner&#39;s exhibition Decupagem/Cr&ocirc;nica de um final anunciado&nbsp;</i>- Museu de Arte de Ribeir&atilde;o Preto (MARP) - Ribeir&atilde;o Preto</a> </li>
+      <li><a target="_blank" href="http://coletor.org/acoes/matheus-rocha-pitta-fonte-para-o-manifestante-desconhecido/">2015 - Coordination and text for <i>Matheus Rocha Pitta&#39;s work Fountain for the Unknown Protester</i> - Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://plataforma.videobrasil.org.br/en/#mapeamentos/82">2015 - Publishing <i>The City as Medium</i> - PLATAFORMA:VB (Videobrasil) - Online </a></li>
+      <li><a target="_blank" href="http://coletor.org/en/acoes/anton-steenbock-pop-tower/">2014 - Coordination and text for <i>Anton Steenbock&#39;s exhibition Pop Tower&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://coletor.org/en/acoes/portugues-lais-myrrha-ensaio-de-orquestra/">2014 - Coordination and text for <i>Lais Myrrha&#39;s exhibition Orchestra Rehearsal&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://coletor.org/en/acoes/renata-de-bonis-suite/">2014 - Coordination and text for <i>Renata De Bonis&#39; exhibition Suite&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://coletor.org/en/acoes/ricardo-carioba-sem-titulo/">2014 - Coordination and text for <i>Ricardo Carioba&#39; exhibition untitled&nbsp;</i>- Coletor - S&atilde;o Paulo</a></li>
+      <li><a target="_blank" href="http://8salon.net/32th-coopy-righots-we-made-it-readi-in-brazil">2014 - Coordination and artists selection for the exhibition <i>32th Coopy RIghOTs - we MADE it READI, in Brazil&nbsp;</i>- 8Salon - Hamburg</a> </li>
     </ul>
   </body>
 </html>
+
